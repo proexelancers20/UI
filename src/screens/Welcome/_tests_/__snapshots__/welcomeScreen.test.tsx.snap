@@ -1,0 +1,190 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Welcome Screen render snap welcome screen 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "#fff",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <View
+    style={
+      {
+        "flex": 2,
+      }
+    }
+  >
+    <Image
+      source={
+        {
+          "testUri": "../../../src/assets/images/welcome.png",
+        }
+      }
+      style={
+        {
+          "height": undefined,
+          "width": 750,
+        }
+      }
+    />
+  </View>
+  <View
+    style={
+      {
+        "flex": 1,
+        "marginHorizontal": 50,
+      }
+    }
+  >
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        [
+          {
+            "alignItems": "center",
+            "backgroundColor": "#FAA8D1",
+            "borderRadius": undefined,
+            "height": undefined,
+            "justifyContent": "center",
+          },
+          {
+            "marginBottom": undefined,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "color": "#000000",
+              "fontSize": 14,
+              "fontWeight": "700",
+            },
+            undefined,
+          ]
+        }
+      >
+        Sign Up
+      </Text>
+    </View>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        [
+          {
+            "alignItems": "center",
+            "backgroundColor": "#FAA8D1",
+            "borderRadius": undefined,
+            "height": undefined,
+            "justifyContent": "center",
+          },
+          {
+            "backgroundColor": "#fff",
+            "borderColor": "#000000",
+            "borderWidth": 2,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "color": "#000000",
+              "fontSize": 14,
+              "fontWeight": "700",
+            },
+            undefined,
+          ]
+        }
+      >
+        Create your profile
+      </Text>
+    </View>
+    <View
+      style={
+        {
+          "flex": 1,
+          "flexDirection": "column-reverse",
+          "marginBottom": undefined,
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#000000",
+            "fontFamily": "NunitoSans_10pt-SemiBold",
+            "fontSize": 16,
+            "fontWeight": "500",
+            "textAlign": "center",
+            "textDecorationLine": "underline",
+          }
+        }
+      >
+        Terms & Privacy Policy
+      </Text>
+    </View>
+  </View>
+</View>
+`;

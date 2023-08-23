@@ -13,7 +13,7 @@ type SplashScreenProps = MicroAppsProps &
 const SplashScreen: React.FC<SplashScreenProps> = ({navigation}) => {
   useEffect(() => {
     setTimeout(() => {
-      navigation.navigate('OnBoardScreen');
+      navigation.replace('OnBoardScreen');
     }, 1500);
   });
 
