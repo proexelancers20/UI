@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {StatusBar, StyleSheet, Text, View} from 'react-native';
 import {SplashIcon} from '../../assets/images';
 import {scale, verticalScale} from 'react-native-size-matters';
 import {CommonString} from '../../helper/helper';
@@ -19,6 +19,7 @@ const SplashScreen: React.FC<SplashScreenProps> = ({navigation}) => {
 
   return (
     <View style={styles.container}>
+      <StatusBar hidden={true} />
       {/* <SplashIcon width={scale(275)} height={verticalScale(60)} /> */}
       <Text testID="SplashWrapp" style={styles.wrappText}>
         {CommonString.SplashTitle}

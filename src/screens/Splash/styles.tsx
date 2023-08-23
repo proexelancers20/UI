@@ -12,6 +12,7 @@ const styles = StyleSheet.create({
       wrappText: {
         fontSize: 85,
         fontFamily: FontFamily.bold,
+        color: colors.black
       },
 })
 

@@ -16,6 +16,14 @@ jest.mock('react-native-size-matters',() => ({
   scale: jest.fn(), 
   verticalScale: jest.fn()
 }));
+jest.mock('react-native-swiper', () => {
+  const React = require('react');
+  const Swiper = (props: any) => {
+    // Mock implementation of Swiper
+    return React.createElement('View', { 'data-testid': 'mock-swiper' }, 'Mock Swiper Component');
+  };
+  return Swiper;
+});
 
 it('renders correctly', () => {
   renderer.create(<App />);

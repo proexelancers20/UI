@@ -17,6 +17,14 @@ jest.mock('@react-navigation/native', () => ({
 }));
 jest.mock('react-native-svg');
 jest.mock('react-native-svg-transformer');
+jest.mock('react-native-swiper', () => {
+  const React = require('react');
+  const Swiper = (props: any) => {
+    // Mock implementation of Swiper
+    return React.createElement('View', { 'data-testid': 'mock-swiper' }, 'Mock Swiper Component');
+  };
+  return Swiper;
+});
 
 const component = (
   <Splash

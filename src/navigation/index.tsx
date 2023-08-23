@@ -3,10 +3,12 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import React from 'react';
 import SplashScreen from '../screens/Splash';
 import OnBoardScreen from '../screens/OnBoard';
+import WelcomeScreen from '../screens/Welcome';
 
 export type NavigationProps = {
   SplashScreen: undefined;
   OnBoardScreen: undefined;
+  WelcomeScreen: undefined;
 };
 
 export type MicroAppsProps = {
@@ -54,6 +56,9 @@ const Navigation = () => {
           </Stack.Screen>
           <Stack.Screen name="OnBoardScreen">
             {(screenProps: any) => <OnBoardScreen {...screenProps} />}
+          </Stack.Screen>
+          <Stack.Screen name="WelcomeScreen">
+            {(screenProps: any) => <WelcomeScreen {...screenProps} />}
           </Stack.Screen>
         </Stack.Navigator>
       </NavigationContainer>

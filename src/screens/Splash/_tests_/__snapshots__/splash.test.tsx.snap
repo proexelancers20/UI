@@ -14,6 +14,7 @@ exports[`Splash describe render snap 1`] = `
   <Text
     style={
       {
+        "color": "#000000",
         "fontFamily": "NunitoSans_10pt-Bold",
         "fontSize": 85,
       }
