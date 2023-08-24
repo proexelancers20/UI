@@ -5,15 +5,17 @@ import {scale, verticalScale} from 'react-native-size-matters';
 import {CommonString} from '../../helper/helper';
 import styles from './styles';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
-import {MicroAppsProps, NavigationProps} from '../../navigation';
+import {NavigationProps} from '../../navigation';
 
-type SplashScreenProps = MicroAppsProps &
-  NativeStackScreenProps<NavigationProps, 'SplashScreen'>;
+type SplashScreenProps = NativeStackScreenProps<
+  NavigationProps,
+  'SplashScreen'
+>;
 
 const SplashScreen: React.FC<SplashScreenProps> = ({navigation}) => {
   useEffect(() => {
     setTimeout(() => {
-      navigation.replace('OnBoardScreen');
+      navigation.navigate('OnBoardScreen');
     }, 1500);
   });
 

@@ -89,3 +89,4 @@ Install Vigo
 "react-native-svg-transformer": "^1.1.0"
 
 Update snapshots npm run test -- -u  
+Update coverage npm test and in package file test : "jest --coverage -u"  

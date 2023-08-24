@@ -5,7 +5,7 @@ import colors from '../../helper/colors';
 import {CommonString, FontFamily, FontSize} from '../../helper/helper';
 import styles from './styles';
 import Swiper from 'react-native-swiper';
-import { MicroAppsProps, NavigationProps } from '../../navigation';
+import { NavigationProps } from '../../navigation';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 
 interface OnboardListProps {
@@ -32,7 +32,7 @@ const OnboardList: OnboardListProps[] = [
   },
 ];
 
-type OnBoardScreenProps = MicroAppsProps & NativeStackScreenProps<NavigationProps, 'OnBoardScreen'>;
+type OnBoardScreenProps = NativeStackScreenProps<NavigationProps, 'OnBoardScreen'>;
 
 const OnBoardScreen: React.FC<OnBoardScreenProps> = ({ navigation }) => {
   const [swiperIndex, setSwiperIndex] = useState<number>(0);

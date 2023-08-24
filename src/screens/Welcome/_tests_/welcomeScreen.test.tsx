@@ -9,11 +9,6 @@ jest.mock('react-native-size-matters',() => ({
 
 const component = (
   <WelcomeScreen
-    rootNavigation={undefined}
-    navContainer={false}
-    globalEventListener={function (name: string, params: any): void {
-      throw new Error('Function not implemented.');
-    }}
     navigation={{ navigate: jest.fn(), goBack: jest.fn(), canGoBack: jest.fn() } as any}
     route={undefined as any }
   />

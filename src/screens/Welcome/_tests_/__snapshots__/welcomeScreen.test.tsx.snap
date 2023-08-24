@@ -83,6 +83,7 @@ exports[`Welcome Screen render snap welcome screen 1`] = `
           },
         ]
       }
+      testID="Welcome_sign_up_button"
     >
       <Text
         style={
@@ -145,6 +146,7 @@ exports[`Welcome Screen render snap welcome screen 1`] = `
           },
         ]
       }
+      testID="Welcome_create_profile_button"
     >
       <Text
         style={

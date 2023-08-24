@@ -4,11 +4,10 @@ import {scale, verticalScale} from 'react-native-size-matters';
 import colors from '../../helper/colors';
 import Button from '../../components/CommonButton';
 import styles from './styles';
-import {MicroAppsProps, NavigationProps} from '../../navigation';
+import { NavigationProps } from '../../navigation';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
 
-type WelcomeScreenProps = MicroAppsProps &
-  NativeStackScreenProps<NavigationProps, 'WelcomeScreen'>;
+type WelcomeScreenProps = NativeStackScreenProps<NavigationProps, 'WelcomeScreen'>;
 
 const WelcomeScreen: React.FC<WelcomeScreenProps> = ({}) => {
   return (
