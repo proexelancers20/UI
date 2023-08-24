@@ -17,6 +17,16 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     textDecorationLine: 'underline',
   },
+  createProfileButton: {
+    backgroundColor: colors.white,
+    borderWidth: 2,
+    borderColor: colors.black,
+  },
+  termsView: {
+    flexDirection: 'column-reverse',
+    flex: 1,
+    marginBottom: scale(20),
+  },
 });
 
 export default styles;

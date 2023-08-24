@@ -173,6 +173,7 @@ exports[`Welcome Screen render snap welcome screen 1`] = `
       }
     >
       <Text
+        onPress={[Function]}
         style={
           {
             "color": "#000000",
@@ -183,6 +184,7 @@ exports[`Welcome Screen render snap welcome screen 1`] = `
             "textDecorationLine": "underline",
           }
         }
+        testID="terms_text_press"
       >
         Terms & Privacy Policy
       </Text>

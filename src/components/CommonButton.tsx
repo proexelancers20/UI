@@ -17,6 +17,7 @@ interface ButtonProps {
   titleStyle?: StyleProp<TextStyle>;
   ButtonTestId?: string;
   TitleTestId?: string;
+  onPress?: () => void;
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -25,9 +26,10 @@ const Button: React.FC<ButtonProps> = ({
   titleStyle,
   ButtonTestId,
   TitleTestId,
+  onPress
 }) => {
   return (
-    <Pressable testID={ButtonTestId} style={[styles.container, ButtonStyle]}>
+    <Pressable testID={ButtonTestId} onPress={() => {onPress && onPress()}} style={[styles.container, ButtonStyle]}>
       <Text testID={TitleTestId} style={[styles.title, titleStyle]}>
         {title}
       </Text>

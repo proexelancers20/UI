@@ -1,13 +1,16 @@
 import React from 'react';
-import {View, Text, Image, Dimensions} from 'react-native';
+import {View, Text, Image, Dimensions, Linking} from 'react-native';
 import {scale, verticalScale} from 'react-native-size-matters';
 import colors from '../../helper/colors';
 import Button from '../../components/CommonButton';
 import styles from './styles';
-import { NavigationProps } from '../../navigation';
+import {NavigationProps} from '../../navigation';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
 
-type WelcomeScreenProps = NativeStackScreenProps<NavigationProps, 'WelcomeScreen'>;
+type WelcomeScreenProps = NativeStackScreenProps<
+  NavigationProps,
+  'WelcomeScreen'
+>;
 
 const WelcomeScreen: React.FC<WelcomeScreenProps> = ({}) => {
   return (
@@ -26,23 +29,23 @@ const WelcomeScreen: React.FC<WelcomeScreenProps> = ({}) => {
           ButtonTestId="Welcome_sign_up_button"
           title="Sign Up"
           ButtonStyle={{marginBottom: verticalScale(25)}}
+          onPress={() => {}}
         />
         <Button
           ButtonTestId="Welcome_create_profile_button"
           title="Create your profile"
-          ButtonStyle={{
-            backgroundColor: colors.white,
-            borderWidth: 2,
-            borderColor: colors.black,
-          }}
+          ButtonStyle={styles.createProfileButton}
+          onPress={() => {}}
         />
-        <View
-          style={{
-            flexDirection: 'column-reverse',
-            flex: 1,
-            marginBottom: scale(20),
-          }}>
-          <Text style={styles.teams}>Terms & Privacy Policy</Text>
+        <View style={styles.termsView}>
+          <Text
+            testID="terms_text_press"
+            onPress={() => {
+              Linking.openURL('https://policies.google.com/terms?hl=en-GB');
+            }}
+            style={styles.teams}>
+            Terms & Privacy Policy
+          </Text>
         </View>
       </View>
     </View>
