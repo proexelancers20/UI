@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`api call screen snap 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "#fff",
+      "flex": 1,
+    }
+  }
+>
+  <RCTScrollView
+    ItemSeparatorComponent={[Function]}
+    data={[]}
+    getItem={[Function]}
+    getItemCount={[Function]}
+    initialNumToRender={20}
+    keyExtractor={[Function]}
+    onContentSizeChange={[Function]}
+    onLayout={[Function]}
+    onMomentumScrollBegin={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    stickyHeaderIndices={[]}
+    testID="List_Data_FlatList"
+    viewabilityConfigCallbackPairs={[]}
+  >
+    <View />
+  </RCTScrollView>
+</View>
+`;
